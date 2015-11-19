@@ -27,6 +27,6 @@ public class FingerChart extends ListActivity {
         });
 
         String[] notes = {"E","F","F♯ G♭", "G","G♯ A♭", "A", "A♯ B♭", "B", "C", "C♯ B♭", "D", "D♯ E♭"};
-
+        //scrubcakes
     }
 }
