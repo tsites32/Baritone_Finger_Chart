@@ -18,7 +18,7 @@ public class FingerChart extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fingerchart);
 
-        Button changenotebass =(Button) findViewById(R. id.btnchangenote);
+        Button changenotebass =(Button) findViewById(R. id.btnchangenotebass);
         changenotebass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
