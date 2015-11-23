@@ -25,7 +25,5 @@ public class FingerChart extends ListActivity {
               startActivity(new Intent(FingerChart.this, ChangeNoteBass.class));
             }
         });
-
-        String[] notes = {"E","F","F♯ G♭", "G","G♯ A♭", "A", "A♯ B♭", "B", "C", "C♯ B♭", "D", "D♯ E♭"};
     }
 }
