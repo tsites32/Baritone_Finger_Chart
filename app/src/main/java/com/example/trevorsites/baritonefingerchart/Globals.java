@@ -70,5 +70,78 @@ public class Globals extends Application {
         "bass_high_f_sharp","bass_high_g_flat","bass_high_g","bass_high_g_sharp",
         "bass_high_a_flat","bass_high_a","bass_high_b_flat"};
 
+    boolean [] alternatefingeringbollbass = {false, false, false, false, true, false, false, false,
+        false, false, false, false, false, false, true, false, false, true, true, false, false,
+        true, true, true, false, true, true, true, true, true, true, true, true, true, true,
+        true, true, true, true, true, true, true, true, };
+
+    boolean [][] alternatevalvesbass = {{false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, true},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, true},
+            {false, false, false},
+            {false, false, false},
+            {true, true, true},
+            {true, false, true},
+            {false, false, false},
+            {false, false, false},
+            {false, false, true},
+            {true, true, true},
+            {true, true, true},
+            {true, false, true},
+            {false, true, true},
+            {false, true, true},
+            {false, false, true},
+            {true, false, true},
+            {false, true, true},
+            {false, true, true},
+            {false, false, true},
+            {true, false, true},
+            {true, false, true},
+            {true, true, true},
+            {true, false, true},
+            {true, true, true},
+            {true, true, true},
+            {true, false, true},
+            {false, true, true},
+            {false, true, true},
+            {true, true, false},
+            {true, false, false}
+    };
+
+    public String[] getBassNotesNames(){ return this.bassnotenames; }
+
+    public String getABassNoteName (int i){ return this.bassnotenames[i]; }
+
+    public boolean getValve1Bass (int i){ return this.bassvalves[i][0]; }
+
+    public boolean getValve2Bass (int i){ return this.bassvalves[i][1]; }
+
+    public boolean getValve3Bass (int i){ return this.bassvalves[i][2]; }
+
+    public String[] getNoteImageBass() { return this.bassnoteimages; }
+
+    public boolean[] getAlternateFingeringBass() { return this.alternatefingeringbollbass; }
+
+    public boolean getAlternateValve1Bass (int i) { return this.alternatevalvesbass[i][0]; }
+
+    public boolean getAlternateValve2Bass (int i) { return this.alternatevalvesbass[i][1]; }
+
+    public boolean getAlternateValve3Bass (int i) { return this.alternatevalvesbass[i][2]; }
+
+    public int getCurrentNotePosition() { return this.currentnoteposition; }
+
+    public void setCurrentNotePosition (int i) {currentnoteposition = i; }
 
 }
