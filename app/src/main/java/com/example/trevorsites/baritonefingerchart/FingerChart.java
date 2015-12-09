@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -46,5 +47,29 @@ public class FingerChart extends Activity {
 
         final String[] noteimages = g.getNoteImageBass();
 
+        String[] notenames = g.getBassNotesNames();
+
+        final boolean[] alt_fingering = g.getAlternateFingeringBass();
+
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_spinner_item, notenames);
+
+        AdapterView.OnItemSelectedListener onSpinner = new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id){
+
+                current_position = position;
+
+                toggle = 0;
+
+                final boolean v1 = g.getValve1Bass(position);
+
+                final boolean v2 = g.getValve2Bass(position);
+
+                final boolean v3 = g.getValve3Bass(position);
+
+
+            }
+        }
     }
 }
